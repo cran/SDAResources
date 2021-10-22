@@ -1,0 +1,39 @@
+#' shorebirds data
+#'
+#' 
+#' Two-phase sample of shorebird nests. These are artificial data constructed
+#'from summary statistics given in Bart and Earnst (2002).
+#'
+#'
+#' @format This data frame contains the following columns:
+#' \describe{
+#'\item{plot:}{plot number}
+#'
+#'\item{rapid:}{rapid-method count of number of birds in plot}
+#'
+#'\item{intense:}{intensive-method count of number of nests in plot
+#'
+#'  = NA if the plot is not in the phase II sample}
+#'  }
+#'  
+#'
+#' @docType data
+#'
+#' @usage data(shorebirds)
+#'
+#'
+#'
+#' @keywords datasets
+#' 
+#'@references Bart, J. and S. Earnst (2002). Double-sampling to estimate density and population trends
+#' in birds. \emph{The Auk 119}, 36–45.
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
+#'
+#' 
+#' 
+#' 
+"shorebirds"
+

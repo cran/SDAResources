@@ -1,0 +1,342 @@
+#'viusca data
+#'
+#'The data \emph{viusca} is a smaller data set from \emph{vius}
+#'with the same columns described below, containing only vehicles from
+#'California. The variable descriptions below are taken from the VIUS Data Dictionary.
+
+#'
+#'
+#' @format This data frame contains the following columns:
+#' 
+#' \describe{
+#' \item{stratum:}{stratum number (contains all 255 strata)}
+#' 
+#' \item{adm_state:}{state number}
+#' 
+#' \item{state:}{state name}
+#' 
+#' \item{trucktype:}{type of truck, used in stratification
+#' 
+#' 1. pickups 
+#' 
+#' 2. minivans, other light vans, and sport utility vehicles
+#' 
+#' 3. light single-unit trucks with gross vehicle weight less than 26,000 pounds
+#' 
+#' 4. heavy single-unit trucks with gross vehicle weight greater than or equal to 26,000 pounds
+#' 
+#' 5. truck-tractors
+#' }
+#' 
+#' \item{tabtrucks:}{column of sampling weights}
+#' 
+#' \item{bodytype:}{body type of vehicle
+#' 
+#' 01. Pickup
+#' 
+#' 02. Minivan
+#' 
+#' 03. Light van other than minivan
+#' 
+#' 04. Sport utility
+#' 
+#' 05. Armored
+#' 
+#' 06. Beverage
+#' 
+#' 07. Concrete mixer
+#' 
+#' 08. Concrete pumper
+#' 
+#' 09. Crane
+#' 
+#' 10. Curtainside
+#' 
+#' 11. Dump
+#' 
+#' 12. Flatbed, stake, platform, etc.
+#' 
+#' 13. Low boy
+#' 
+#' 14. Pole, logging, pulpwood, or pipe
+#' 
+#' 15. Service, utility
+#' 
+#' 16. Service, other
+#' 
+#' 17. Street sweeper
+#' 
+#' 18. Tank, dry bulk
+#' 
+#' 19. Tank, liquids or gases
+#' 
+#' 20. Tow/Wrecker
+#' 
+#' 21. Trash, garbage, or recycling
+#' 
+#' 22. Vacuum
+#' 
+#' 23. Van, basic enclosed
+#' 
+#' 24. Van, insulated non-refrigerated
+#' 
+#' 25. Van, insulated refrigerated
+#' 
+#' 26. Van, open top
+#' 
+#' 27. Van, step, walk-in, or multistop
+#' 
+#' 28. Van, other
+#' 
+#' 99. Other not elsewhere classified 
+#' }
+#' 
+#' \item{adm_modelyear:}{model year
+#' 
+#' 01. 2003, 2002
+#' 
+#' 02. 2001
+#' 
+#' 03. 2000
+#' 
+#' 04. 1999
+#' 
+#' 05. 1998
+#' 
+#' 06. 1997
+#' 
+#' 07. 1996
+#' 
+#' 08. 1995
+#' 
+#' 09. 1994
+#' 
+#' 10. 1993
+#' 
+#' 11. 1992
+#' 
+#' 12. 1991
+#' 
+#' 13. 1990
+#' 
+#' 14. 1989
+#' 
+#' 15. 1988
+#' 
+#' 16. 1987
+#' 
+#' 17. Pre-1987}
+#' 
+#' \item{vius_gvw:}{Gross vehicle weight based on average reported weight
+#' 
+#'01. Less than 6,001 lbs
+#'
+#' 02. 6,001 to 8,500 lbs
+#' 
+#' 03. 8,501 to 10,000 lbs
+#' 
+#' 04. 10,001 to 14,000 lbs
+#' 
+#' 05. 14,001 to 16,000 lbs
+#' 
+#'  06. 16,001 to 19,500 lbs
+#'  
+#' 07. 19,501 to 26,000 lbs
+#' 
+#' 08. 26,001 to 33,000 lbs
+#' 
+#' 09. 33,001 to 40,000 lbs
+#' 
+#' 10. 40,001 to 50,000 lbs
+#' 
+#' 11. 50,001 to 60,000 lbs
+#' 
+#' 12. 60,001 to 80,000 lbs
+#' 
+#' 13. 80,001 to 100,000 lbs
+#' 
+#' 14. 100,001 to 130,000 lbs
+#' 
+#' 15. 130,001 lbs. or more}
+#'  
+#'  \item{miles_annl:}{number of miles driven during 2002}
+#'  
+#'  \item{miles_life:}{number of miles driven since manufactured}
+#'  
+#'  \item{mpg:}{miles per gallon averaged during 2002, range from 0.3 
+#'  to 35, NA denotes not reported or not applicable}
+#'  
+#'  \item{opclass:}{operator classification with highest percent
+#'  
+#' 1. Private
+#' 
+#' 2. Motor carrier
+#' 
+#' 3. Owner operator
+#' 
+#' 4. Rental
+#' 
+#' 5. Personal transportation
+#' 
+#' 6. Not applicable (Vehicle not in use)}
+#'  
+#'  \item{opclass_mtr:}{percent of miles driven as a motor carrier, NA denotes vehicle not in use}
+#'  
+#'  \item{opclass_own:}{percent of miles driven as an owner operator, NA denotes vehicle not in use}
+#'  
+#'  \item{opclass_psl:}{percent of miles driven for personal transportation, NA denotes 
+#'  vehicle not in use}
+#'  
+#'  \item{opclass_pvt:}{percent of miles driven as private (carry own goods
+#'   or internal company business only), NA denotes vehicle not in use}
+#'  
+#'  \item{opclass_rnt:}{percent of miles driven as rental, NA denotes vehicle not in use}
+#'  
+#' \item{transmssn:}{type of transmission
+#' 
+#'1. Automatic
+#'
+#'2. Manual
+#'
+#'3. Semi-Automated Manual
+#'
+#'4. Automated Manual
+#'}
+#'
+#'    
+#'\item{trip_primary:}{primary range of operation
+#'
+#' 1. Off-the-road
+#' 
+#' 2. Less than 50 miles
+#' 
+#' 3. 51 to 100 miles
+#' 
+#' 4. 101 to 200 miles
+#' 
+#' 5. 201 to 500 miles
+#' 
+#' 6. 501 miles or more
+#' 
+#' 7. Not reported
+#' 
+#' 8. Not applicable (Vehicle not in use)}
+#'  
+#' \item{trip0_50:}{percent of annual miles accounted for with trips 
+#' 50 miles or less from the home base}
+#'  
+#'  \item{trip051_100:}{percent of annual miles accounted for with trips 
+#'  51 to 100 miles from the home base}
+#'  
+#'  \item{trip101_200:}{percent of annual miles accounted for with trips 
+#'  101 to 200 miles from the home base}
+#'  
+#'  \item{trip201_500:}{percent of annual miles accounted for with trips
+#'   201 to 500 miles from the home base}
+#'  
+#'  \item{trip500more:}{percent of annual miles accounted for with trips 
+#'  501 or more miles from home base}
+#'  
+#'  \item{adm_make:}{make of vehicle
+#'  
+#'01. Chevrolet
+#'
+#' 02. Chrysler
+#' 
+#' 03. Dodge
+#' 
+#' 04. Ford
+#' 
+#' 05. Freightliner
+#' 
+#' 06. GMC
+#' 
+#' 07. Honda
+#' 
+#' 08. International
+#' 
+#' 09. Isuzu
+#' 
+#' 10. Jeep
+#' 
+#' 11. Kenworth
+#' 
+#' 12. Mack
+#' 
+#' 13. Mazda
+#' 
+#' 14. Mitsubishi
+#' 
+#' 15. Nissan
+#' 
+#' 16. Peterbilt
+#' 
+#' 17. Plymouth
+#' 
+#' 18. Toyota
+#' 
+#' 19. Volvo
+#' 
+#' 20. White
+#' 
+#' 21. Western Star
+#' 
+#' 22. White GMC
+#' 
+#' 23. Other (domestic)
+#' 
+#' 24. Other (foreign)}
+#'  
+#'\item{business:}{Business in which vehicle was most often used during 2002
+#'
+#' 01. For-hire transportation or warehousing
+#' 
+#' 02. Vehicle leasing or rental
+#' 
+#' 03. Agriculture, forestry, fishing, or hunting
+#' 
+#' 04. Mining
+#' 
+#' 05. Utilities
+#' 
+#' 06. Construction
+#' 
+#' 07. Manufacturing
+#' 
+#' 08. Wholesale trade
+#' 
+#' 09. Retail trade
+#' 
+#' 10. Information services
+#' 
+#' 11. Waste management, landscaping, or administrative/support services
+#' 
+#' 12. Arts, entertainment, or recreation services
+#' 
+#'  13. Accommodation or food services
+#'  
+#'14. Other services
+#'
+#'NA. Not reported or not applicable}
+#'  
+#'  }
+#'  
+#'
+#' @docType data
+#'
+#' @usage data(viusca)
+#'
+#'
+#'
+#' @keywords datasets
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
+#' 
+#'
+#' 
+#' 
+#' 
+"viusca"
+

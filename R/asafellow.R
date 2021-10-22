@@ -1,0 +1,59 @@
+#' asafellow data
+#'
+#' 
+#'Information from a stratified random sample of Fellows of the American
+#'Statistical Association elected between 2000 and 2018. The list of Fellows serving as the 
+#'population was downloaded from \href{https://www.amstat.org/ASA/Your-Career/Awards/ASA-Fellows-list.aspx}{amstat}
+#' on March 18, 2019. All other information was obtained from public sources.
+#'
+#'
+#' @format This data frame contains the following columns:
+#' 
+#'\describe{
+#'\item{awardyr:}{year of award}
+#'
+#'\item{gender:}{gender of Fellow (character variable, M = male, F = female)}
+#'
+#'\item{popsize:}{population size in stratum ( = \eqn{N_h})}
+#'
+#'\item{sampsize:}{sample size in stratum ( = \eqn{n_h})}
+#'
+#'\item{field:}{field of employment (character variable)
+#'
+#'acad = academia
+#'
+#'  ind = industry
+#'  
+#'    govt = government}
+#'
+#'\item{degreeyr:}{year in which Fellow received terminal degree (year of Ph.D.
+#'if applicable, otherwise year of Master's or Bachelor's degree)}
+#'
+#'
+#' \item{math:}{= 1 if majored in mathematics as undergraduate
+#' 
+#'   = 0 if did not major in math
+#'   
+#'   = NA if missing}
+#' }
+#' 
+#'  
+#'
+#' @docType data
+#'
+#' @usage data(asafellow)
+#'
+#'
+#'
+#' @keywords datasets
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
+#' 
+#'
+#' 
+#' 
+#' 
+"asafellow"
+

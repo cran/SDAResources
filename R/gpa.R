@@ -5,12 +5,13 @@
 #'
 #'
 #' @format This data frame contains the following columns:
+#'\describe{
+#'\item{suite:}{suite (psu) identifier}
 #'
-#'suite: Suite (psu) identifier
+#'\item{gpa:}{grade point average of person in suite}
 #'
-#'gpa: Grade point average of person in suite
-#'
-#'wt: Sampling weight, = 20 for every observation
+#'\item{wt:}{sampling weight, = 20 for every observation}
+#'}
 #'
 #' @docType data
 #'
@@ -20,7 +21,9 @@
 #'
 #' @keywords datasets
 #'
-#' @references Lohr (2021). Sampling: Design and Analysis, 3rd Edition.
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press. 
 #' 
 #'
 "gpa"

@@ -1,0 +1,202 @@
+#'collshr data
+#'
+#' 
+#' Probability-proportional-to-size sample of size 10 from the stratum of small,
+#'highly residential colleges (having 
+#'\emph{ccsizeset} = 11) in data \emph{college}. Columns 1-29 are as in
+#'\emph{college} data, with additional columns 30-34 listed below.
+#'
+#'
+#' @format This data frame contains the following columns:
+#' \describe{
+#'\item{unitid:}{unit identification number}
+#'
+#'\item{instnm:}{institution name (character, length 81)}
+#'
+#'\item{city:}{city (character, length 24)}
+#'
+#'\item{stabbr:}{state abbreviation (character, length 2)}
+#'
+#'\item{highdeg:}{highest degree awarded
+#'
+#'3 = Bachelor's degree
+#'
+#'4 = Graduate degree}
+#'
+#'\item{control:}{control (ownership) of institution
+#'
+#'1 = public 
+#'
+#'2 = private nonprofit}
+#'
+#'\item{region:}{region where institution is located
+#'
+#'1 New England (CT, ME, MA, NH, RI, VT)
+#'
+#'2 Mid East (DE, DC, MD, NJ, NY, PA)
+#'
+#'3 Great Lakes (IL, IN, MI, OH, WI)
+#'
+#'4 Plains (IA, KS, MN, MO, NE, ND, SD)
+#'
+#'5 Southeast (AL, AR, FL, GA, KY, LA, MS, NC, SC, TN, VA, WV)
+#'
+#'6 Southwest (AZ, NM, OK, TX)
+#'
+#'7 Rocky Mountains (CO, ID, MT, UT, WY)
+#'
+#'8 Far West (AK, CA, HI, NV, OR, WA)
+#'}
+#'
+#'\item{locale:}{locale of institution
+#'
+#'11 City: Large (population of 250,000 or more)
+#'
+#'12 City: Midsize (population of at least 100,000 but less than 250,000)
+#'
+#'13 City: Small (population less than 100,000)
+#'
+#'21 Suburb: Large (outside principal city, in urbanized area with population of 250,000 or more)
+#'
+#'22 Suburb: Midsize (outside principal city, in urbanized area with population of at least 100,000 but less than 250,000)
+#'
+#'23 Suburb: Small (outside principal city, in urbanized area with population less than 100,000)
+#'
+#'31 Town: Fringe (in urban cluster up to 10 miles from an urbanized area)
+#'
+#'32 Town: Distant (in urban cluster more than 10 miles and up to 35 miles from an urbanized area)
+#'
+#'33 Town: Remote (in urban cluster more than 35 miles from an urbanized area)
+#'
+#'41 Rural: Fringe (rural territory up to 5 miles from an urbanized area or up to 2.5 miles from an urban cluster)
+#'
+#'42 Rural: Distant (rural territory more than 5 miles but up to 25 miles from an urbanized area or more than 2.5 and up to 10 miles from an urban cluster)
+#'
+#'43 Rural: Remote (rural territory more than 25 miles from an urbanized area and more than 10 miles from an urban cluster)
+#'}
+#'
+#'\item{ccbasic:}{carnegie basic classification
+#'
+#'15 Doctoral Universities: Very High Research Activity
+#'
+#'16 Doctoral Universities: High Research Activity
+#'
+#'17 Doctoral/Professional Universities
+#'
+#'18 Master's Colleges & Universities: Larger Programs
+#'
+#'19 Master's Colleges & Universities: Medium Programs
+#'
+#'20 Master's Colleges & Universities: Small Programs
+#'
+#'21 Baccalaureate Colleges: Arts & Sciences Focus
+#'
+#'22 Baccalaureate Colleges: Diverse Fields
+#'}
+#'
+#'
+#'\item{ccsizset:}{carnegie classification, size and setting
+#'
+#'6 Four-year, very small, primarily nonresidential
+#'
+#'7 Four-year, very small, primarily residential
+#'
+#'8 Four-year, very small, highly residential
+#'
+#'9 Four-year, small, primarily nonresidential
+#'
+#'10 Four-year, small, primarily residential
+#'
+#'11 Four-year, small, highly residential
+#'
+#'12 Four-year, medium, primarily nonresidential
+#'
+#'13 Four-year, medium, primarily residential
+#'
+#'14 Four-year, medium, highly residential
+#'
+#'15 Four-year, large, primarily nonresidential
+#'
+#'16 Four-year, large, primarily residential
+#'
+#'17 Four-year, large, highly residential
+#'}
+#'
+#'\item{hbcu:}{historically black college or university, 
+#'
+#'1 = yes, 0 = no}
+#'
+#'\item{openadmp:}{does the college have an open admissions policy, that is, does it accept any students that apply or have minimal requirements for admission?
+#'
+#'  1 = yes, 0 = no}
+#'
+#'\item{adm_rate:}{fall admissions rate, defined as the number of admitted undergraduates divided by the number of undergraduates who applied}
+#'
+#'\item{sat_avg:}{average SAT score (or equivalent) for admitted students}
+#'
+#'\item{ugds:}{number of degree-seeking undergraduate students enrolled in the fall term}
+#'
+#'\item{ugds_men:}{proportion of ugds who are men}
+#'
+#'\item{ugds_women:}{proportion of ugds who are women}
+#'
+#'\item{ugds_white:}{proportion of ugds who are white (based on self-reports)}
+#'
+#'\item{ugds_black:}{proportion of ugds who are black/African American (based on self-reports)}
+#'
+#'\item{ugds_hisp:}{proportion of ugds who are Hispanic (based on self-reports)}
+#'
+#'\item{ugds_asian:}{proportion of ugds who are Asian (based on self-reports)}
+#'
+#'\item{ugds_other:}{proportion of ugds who have other race/ethnicity (created from other categories on original data file; race/ethnicity proportions sum to 1)}
+#'
+#'\item{npt4:}{average net price of attendance, derived from the full cost of attendance, 
+#'including tuition and fees, books and supplies, and living expenses,
+#'minus federal, state, and institutional grant scholarship aid, for full time, 
+#'first time undergraduate Title IV receiving students.
+#'NPT4 created from scorecard data variables NPT4_PUB if public institution and 
+#'NPT4_PRIV if private}
+#'
+#'\item{tuitionfee_in:}{in-state tuition and fees}
+#'
+#'\item{tuitionfee_out:}{out-of-state tuition and fees}
+#'
+#'\item{avgfacsal:}{average faculty salary per month}
+#'
+#'\item{pftfac:}{proportion of faculty that is full-time}
+#'
+#'\item{c150_4:}{proportion of first-year, full-time students who complete their degree within 150\% of the expected time to complete; for most institutions, this is the proportion of students who receive a degree within 6 years}
+#'
+#'\item{grads:}{number of graduate students}
+#' 
+#' \item{mathfac:}{number of mathematics faculty}
+#' 
+#' \item{psychfac:}{number of psychology faculty}
+#' 
+#' \item{biolfac:}{number of biology faculty}
+#' 
+#' \item{psii:}{selection probability = ugds /(sum of ugds for stratum)}
+#' 
+#' \item{wt:}{sampling weight = 1/(10*\eqn{\psi_i})}
+#'  
+#'  }
+#'  
+#'
+#' @docType data
+#'
+#' @usage data(collshr)
+#'
+#'
+#'
+#' @keywords datasets
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press. 
+#' 
+#'
+#' 
+#' 
+#' 
+"collshr"
+

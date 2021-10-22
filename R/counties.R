@@ -1,0 +1,70 @@
+#' counties data
+#'
+#' 
+#'Data (from 1990) from an SRS of 100 of the 3141 counties in the United
+#' States. Missing values are coded as NA.
+#'
+#'
+#' @format This data frame contains the following columns:
+#' \describe{
+#' 
+#'  \item{RN:}{random number used to select the county}
+#'  
+#'  \item{state:}{state abbreviation}
+#'  
+#'  \item{county:}{county name}
+#'  
+#'  \item{landarea:}{land area, 1990 (square miles)}
+#'  
+#'  \item{totpop:}{total number of persons, 1992}
+#'  
+#'  \item{physician:}{active non-Federal physicians on Jan. 1, 1990}
+#'  
+#'  \item{enroll:}{school enrollment in elementary or high school, 1990}
+#'  
+#'  \item{percpub:}{percent of school enrollment in public schools}
+#'  
+#'  \item{civlabor:}{civilian labor force, 1991}
+#'  
+#'  \item{unemp:}{number unemployed, 1991}
+#'  
+#'  \item{farmpop:}{farm population, 1990}
+#'  
+#'  \item{numfarm:}{number of farms, 1987}
+#'  
+#'  \item{farmacre:}{acreage in farms, 1987}
+#'  
+#'  \item{fedgrant:}{total expenditures in federal funds and grants, 1992 (millions of dollars)}
+#'  
+#'\item{fedciv:}{civilians employed by federal government, 1990}
+#'
+#'\item{milit:}{military personnel, 1990}
+#'
+#'\item{veterans:}{number of veterans, 1990}
+#'
+#'\item{percviet:}{percent of veterans from Vietnam era, 1990}
+#'  
+#'    }
+#'      
+#'          
+#'
+#' @docType data
+#'
+#' @usage data(counties)
+#'
+#'
+#'
+#' @keywords datasets
+#' 
+#'@references Source: U.S. Census Bureau (1994).
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
+#' 
+#'
+#' 
+#' 
+#' 
+"counties"
+

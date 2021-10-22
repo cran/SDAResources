@@ -7,17 +7,23 @@
 \format{
 This data frame contains the following columns:
 
-clutch: Clutch number from which eggs were subsampled.
+\describe{
+\item{clutch:}{clutch number from which eggs were subsampled}
 
-csize: Number of eggs in clutch ( M i )
+\item{csize:}{number of eggs in clutch (\eqn{M_i})}
 
-length: length of egg (mm)
+\item{length:}{length of egg (mm)}
 
-breadth: maximum breadth of egg (mm)
+\item{breadth:}{maximum breadth of egg (mm)}
 
-volume: calculated as 0.000507*length * breadth
+\item{volume:}{calculated as 0.000507*length*\eqn{breadth^2} (\eqn{mm^3})}
 
-tmt: = 1 if received supplemental feeding, 0 otherwise
+\item{tmt:}{
+
+= 1 if received supplemental feeding
+
+= 0 otherwise}
+}
 }
 \usage{
 data(coots)
@@ -28,6 +34,11 @@ provided courtesy of Todd Arnold. Not all observations are used for this data se
 may not agree with those in Arnold (1991).
 }
 \references{
-Lohr (2021). Sampling: Design and Analysis, 3rd Edition.
+Arnold, T. W. (1991). Intraclutch variation in egg size of American coots. \emph{The Condor 93},
+19–27.
+
+Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+
+Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
 }
 \keyword{datasets}

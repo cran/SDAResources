@@ -1,9 +1,11 @@
 #' syc data
 #'
-#' Selected variables from the Survey of Youth in Custody (Beck et al., 1988). Source:
-#'U.S. Department of Justice (1989). Strata 6-16 each contain one facility; the psus in those
+#' Selected variables from the Survey of Youth in Custody (Beck et al., 1988).
+#' 
+#' Source: U.S. Department of Justice (1989). Strata 6-16 each contain one facility; the psus in those
 #'strata are residents. In strata 1-5, the psus are facilities. The number of facilities in the
-#'population ( N h ) for those five facilities are: N 1 = 99 , N 2 = 39 , N 3 = 30 , N 4 = 13 , N 5 = 14 .
+#'population (\eqn{N_h}) for those five facilities are: \eqn{N_1 = 99}, \eqn{N_2 = 39}, \eqn{N_3 = 30}, 
+#'\eqn{N_4 = 13}, \eqn{N_5 = 14}.
 #'Eleven facilities are sampled from stratum 1 and seven facilities are sampled from each of
 #'strata 2 through 5.
 #'
@@ -11,76 +13,160 @@
 #'
 #' @format This data frame contains the following columns:
 #'
-#'stratum: stratum number
+#'\describe{
+#'\item{stratum:}{stratum number}
 #'
-#'psu: psu number, (= facility number for residents in strata 1-5 and person number for residents in strata 6-16)
+#'\item{psu:}{psu number
 #'
-#'facility: facility number
+#'= facility number for residents in strata 1-5 
 #'
-#'facsize: number of eligible residents in psu
+#'= person number for residents in strata 6-16}
 #'
-#'finalwt: final weight
+#'\item{facility:}{facility number}
 #'
-#'randgrp:  random group number
+#'\item{facsize:}{number of eligible residents in psu}
 #'
-#'age: age of resident (99=missing)
+#'\item{finalwt:}{final weight}
 #'
-#'race: race of resident (1 = white; 2 = Black; 3 = Asian/Pacific Islander; 4 = American Indian, Aleut, Eskimo; 5 = Other; 9 = Missing)
+#'\item{randgrp:}{random group number}
 #'
-#'ethnicty: 1 = Hispanic, 0 = not Hispanic, 9=missing
+#'\item{age:}{age of resident (NA = missing)}
 #'
-#'educ: highest grade attended before sent to correctional institution (00 = Never attended school; 01 - 12 = highest grade attended;13 = GED; 14 = Other; 99=missing)
+#'\item{race:}{race of resident 
 #'
-#'gender: 1 = male, 2 = female, 9 = missing
+#'1 = White
 #'
-#'livewith: Who did you live with most of the time you were growing up? (1 = Mother only, 2 = Father only 3 = Both mother and father,4 = Grandparents, 5 = Other relatives, 6 = Friends, 7 = Foster home,8 = Agency or institution, 9 = Someone else, 99 = Blank)
+#'2 = Black 
 #'
-#'famtime: Has anyone in your family, such as your mother, father,brother, sister, ever served time in jail or prison? (1 = Yes, 2 = No, 7 = Don't know, 9 = Blank)
+#'3 = Asian/Pacific Islander
 #'
-#'crimtype: most serious crime in current offense
+#'  4 = American Indian, Alaska Native
+#'  
+#'    5 = Other
+#'    
+#'      NA = Missing}
 #'
-#'\{1 = violent (e.g., murder, rape, robbery, assault)
+#'\item{ethnicty:}{1 = Hispanic
+#'
+#'  2 = not Hispanic
+#'  
+#'    NA = missing}
+#'
+#'\item{educ:}{highest grade attended before sent to correctional institution 
+#'
+#'0 = never attended school
+#'
+#'1 - 12 = highest grade attended
+#'
+#'13 = GED
+#'
+#'14 = other
+#'}
+#'
+#'\item{gender:}{1 = male
+#'
+#'  2 = female
+#'  }
+#'
+#'\item{livewith:}{who did you live with most of the time you were growing up? 
+#'
+#'1 = mother only
+#'
+#'2 = father only
+#'
+#'3 = both mother and father
+#'
+#'4 = grandparents
+#'
+#'5 = other relatives
+#'
+#'6 = friends
+#'
+#'7 = foster home
+#'
+#'8 = agency or institution
+#'
+#'9 = someone else
+#'
+#'MA = blank}
+#'
+#'\item{famtime:}{has anyone in your family, such as your mother, father, brother, sister, ever served time in jail or prison? 
+#'
+#'1 = yes
+#'
+#'  2 = no
+#'  
+#'    NA = don't know
+#'    }
+#'
+#'\item{crimtype:}{most serious crime in current offense
+#'
+#'1 = violent (e.g., murder, rape, robbery, assault)
 #'
 #'2 = property (e.g. burglary, larceny, arson, fraud, motor vehicle theft)
 #'
-#'3 = drug (drug possession or traffcking)
+#'3 = drug (drug possession or trafficking)
 #'
 #'4 = public order (weapons violation, perjury, failure to appear in court)
 #'
 #'5 = juvenile status offense (truancy, running away, incorrigible behavior)
 #'
-#'9 = missing
-#'\}
+#'NA = missing
+#'}
 #'
-#'everviol: ever put on probation or sent to correctional inst for violent offense (1 = yes, 0 = no)
+#'\item{everviol:}{ever put on probation or sent to correctional inst for violent offense 
 #'
-#'numarr: number of times arrested (99=missing)
+#'1 = yes
 #'
-#'probtn: number of times on probation (99=missing)
+#'0 = no}
 #'
-#'corrinst: number of times previously committed to correctional institution (99=missing)
+#'\item{numarr:}{number of times arrested (NA = missing)}
 #'
-#'evertime: Prior to being sent here did you ever serve time in a correctional institution? ( 1 = yes, 2 = no, 9 = missing)
+#'\item{probtn:}{number of times on probation (NA = missing)}
 #'
-#'prviol: =1 if previously arrested for violent offense, 0 otherwise
+#'\item{corrinst:}{number of times previously committed to correctional institution (NA = missing)}
 #'
-#'prprop: =1 if previously arrested for property offense, 0 otherwise
+#'\item{evertime:}{prior to being sent here did you ever serve time in a correctional institution? 
 #'
-#'prdrug: =1 if previously arrested for drug offense, 0 otherwise
+#'1 = yes
 #'
-#'prpub: =1 if previously arrested for public order offense, 0 otherwise
+#'2 = no
 #'
-#'prjuv: =1 if previously arrested for juvenile status offense, 0 otherwise
+#'  NA = missing}
 #'
-#'agefirst: age first arrested (99=missing)
+#'\item{prviol:}{= 1 if previously arrested for violent offense, 0 otherwise}
 #'
-#'usewepn: Did you use a weapon . . . for this incident? (1 = Yes, 2 = No, 9 = Blank)
+#'\item{prprop:}{= 1 if previously arrested for property offense, 0 otherwise}
 #'
-#'alcuse: Did you drink alcohol at all during the year before being sent here this time? (1 = Yes; 2 = No, didn't drink during year before; 3 = No, don't drink at all, 9 = missing)
+#'\item{prdrug:}{= 1 if previously arrested for drug offense, 0 otherwise}
 #'
-#'everdrug: Ever used illegal drugs; 0=no, 1=yes, 9=missing
+#'\item{prpub:}{= 1 if previously arrested for public order offense, 0 otherwise}
 #'
+#'\item{prjuv:}{= 1 if previously arrested for juvenile status offense, 0 otherwise}
 #'
+#'\item{agefirst:}{age first arrested (NA = missing)}
+#'
+#'\item{usewepn:}{did you use a weapon . . . for this incident? (1 = yes, 2 = no, NA = blank)}
+#'
+#'\item{alcuse:}{did you drink alcohol at all during the year before being sent here this time? 
+#'
+#'1 = yes
+#'
+#'2 = no, didn't drink during year before
+#'
+#'3 = no, don't drink at all
+#'
+#'  NA = missing}
+#'
+#'\item{everdrug:}{ever used illegal drugs;
+#'
+#'  0 = no
+#'  
+#'1 = yes
+#'
+#'  NA = missing}
+#'
+#'}
 #'
 #'
 #' @docType data
@@ -90,8 +176,14 @@
 #'
 #'
 #' @keywords datasets
-#'
-#' @references Lohr (2021). Sampling: Design and Analysis, 3rd Edition.
 #' 
+#'@references Beck, A. J., S. A. Kline, and L. A. Greenfeld (1988). Survey of Youth in Custody. \emph{Technical
+#'Report NCJ-113365, Bureau of Justice Statistics}, Washington, DC.
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press. 
+#'  
 #'
 "syc"
+

@@ -7,19 +7,27 @@
 \format{
 This data frame contains the following columns:
 
-rn: random number used to select unit
+\describe{
 
-height: height of person, cm
+\item{rn:}{random number used to select unit}
 
-gender: M=male, F=female
+\item{height:}{height of person, cm}
+
+\item{gender:}{
+M = male
+
+F = female}
+}
 }
 \usage{
 data(htsrs)
 }
 \description{
-Height and gender for a SRS of 200 persons, taken from htpop data
+Height and gender for an SRS of 200 persons, taken from \emph{htpop} data
 }
 \references{
-Lohr (2021). Sampling: Design and Analysis, 3rd Edition.
+Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+
+Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
 }
 \keyword{datasets}

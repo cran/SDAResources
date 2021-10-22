@@ -7,21 +7,25 @@
 \format{
 This data frame contains the following columns:
 
-class: Class ID number
+\describe{
+\item{class:}{class ID number}
 
-class_size: Number of students in class
+\item{class_size:}{number of students in class}
 
-finalweight: Sampling weight for student
+\item{finalweight:}{sampling weight for student}
 
-hours: Number of hours spent studying statistics
+\item{hours:}{number of hours spent studying statistics}
+}
 }
 \usage{
 data(classpps)
 }
 \description{
-Two-stage unequal-probability sample without replacement from the population of classes in classes data
+Two-stage unequal-probability sample without replacement from the population of classes in \emph{classes} data.
 }
 \references{
-Lohr (2021). Sampling: Design and Analysis, 3rd Edition.
+Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+
+Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
 }
 \keyword{datasets}

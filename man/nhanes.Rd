@@ -7,25 +7,36 @@
 \format{
 This data frame contains the following columns:
 
-sdmvstra: Pseudo-stratum. (These are groups of secondary sampling units used for variance estimation on the publicly available data. Pseudo-strata and pseudo-psus are released instead of the actual strata and psus to protect the confidentiality of respondents' information. Use sdmvstra as the variable defining the strata.)
+\describe{
+\item{sdmvstra:}{Pseudo stratum. These are groups of secondary sampling 
+units used for variance estimation on the publicly available data. 
+Pseudo strata and pseudo psus are released instead of the actual strata
+and psus to protect the confidentiality of respondents' information. 
+Use sdmvstra as the variable defining the strata.}
 
-sdmvpsu: Pseudo-psu. Use sdmvpsu as the primary sampling unit (psu). (There are two pseudo-psus per pseudo-stratum, numbered 1 and 2.)
+\item{sdmvpsu:}{Pseudo-psu. Use sdmvpsu as the primary sampling unit (psu). (There are two pseudo-psus per pseudo-stratum, numbered 1 and 2.)}
 
-wtint2yr: Interview weight (use as weight for variables 5-12)
+\item{wtint2yr:}{Interview weight (use as weight for variables 5-12)}
 
-wtmec2yr: Mobile Examination Center weight (use as weight for any analysis involving variables 13-25)
+\item{wtmec2yr:}{Mobile Examination Center weight (use as weight for any analysis involving variables 13-25)}
 
-ridstatr: Interview/examination status, (= 1 if interviewed only, = 2 if interviewed and had medical examination)
+\item{ridstatr:}{Interview/examination status
 
-ridageyr: Age in years at screening, from 0 to 80. (Anyone with age > 80 years is recorded (topcoded) as 80. No values are missing for this variable.)
+ = 1 if interviewed only
+ 
+   = 2 if interviewed and had medical examination}
 
-ridagemn: Age in months at screening (reported only for persons aged 24 months or younger at the time of exam, otherwise missing)
+\item{ridageyr:}{Age in years at screening, from 0 to 80. Anyone with age > 80 years is recorded (topcoded) as 80. No values are missing for this variable.}
 
-riagendr: = 1 if male, 2 if female (no missing values)
+\item{ridagemn:}{Age in months at screening (reported only for persons with age 24 months or younger at the time of exam, otherwise missing)}
 
-ridreth3: Race/ethnicity code (no missing values)
+\item{riagendr:}{= 1 if male
 
-\{1 = Mexican American
+= 2 if female (no missing values)}
+
+\item{ridreth3:}{Race/ethnicity code (no missing values)
+
+1 = Mexican American
 
 2 = Other Hispanic
 
@@ -36,11 +47,10 @@ ridreth3: Race/ethnicity code (no missing values)
 6 = Non-Hispanic Asian
 
 7 = Other Race, Including Multi-Racial
-\}
+}
+\item{dmdeduc2:}{Education level of person interviewed (given for adults age 20+only)
 
-dmdeduc2: Education level of person interviewed (given for adults age 20+only)
-
-\{1 = Less than 9th grade
+1 = Less than 9th grade
 
 2 = 9th to 11th grade (including 12th grade with no diploma)
 
@@ -53,62 +63,67 @@ dmdeduc2: Education level of person interviewed (given for adults age 20+only)
 7 = Refused
 
 9 = Don't know
-\}
+}
+\item{dmdfmsiz:}{Total number of people in the family. Values 1-6 indicate the number of people is that number; value 7 indicates 7 or more people in family. No missing values.}
 
-dmdfmsiz: Total number of people in the family. (Values 1-6 indicate the number of people is that number; value 7 indicates 7 or more people in family. No missing values.)
+\item{indfmpir:}{Ratio of family income to poverty guideline. A value less than 1 indicates the family is below the poverty threshold. Variable indfmpir is a continuous variable where values between 0 and 4.99 indicate the actual poverty ratio. A value of 5 indicates that the ratio of family income to the poverty guideline for that family is 5 or more.}
 
-indfmpir: Ratio of family income to poverty guideline. (A value less than 1 indicates the family is below the poverty threshold. Variable indfmpir is a continuous variable where values between 0 and 4.99 indicate the actual poverty ratio. A value of 5 indicates that the ratio of family income to the poverty guideline for that family is 5 or more.)
+\item{bmxwt:}{Weight (kg)}
 
-bmxwt: Weight (kg)
+\item{bmxht:}{Standing height (cm)}
 
-bmxht: Standing height (cm)
+\item{bmxbmi:}{Body mass index (kg/\eqn{m^2}), calculated as \eqn{bmxwt/(bmxht/100)^2}}
 
-bmxbmi: Body mass index (kg/m2), calculated as bmxwt/(bmxht/100) 2
+\item{bmxwaist:}{Waist circumference (cm)}
 
-bmxwaist: Waist circumference (cm)
+\item{bmxleg:}{Upper leg length (cm)}
 
-bmxleg: Upper leg length (cm)
+\item{bmxarml:}{Upper arm length (cm)}
 
-bmxarml: Upper arm length (cm)
+\item{bmxarmc:}{Upper arm circumference (cm)}
 
-bmxarmc: Upper arm circumference (cm)
+\item{bmdavsad:}{Average sagittal abdominal diameter (SAD, the distance from the small of the back to the upper abdomen), in cm. Calculated by averaging the SAD readings on the person (up to four)}
 
-bmdavsad: Average sagittal abdominal diameter (SAD, the distance from the small of the back to the upper abdomen), in cm. Calculated by averaging the SAD readings on the person (up to four).
+\item{lbxtc:}{Serum total cholesterol (mg/dL)}
 
-lbxtc: Serum total cholesterol (mg/dL)
+\item{bpxpls:}{60-second pulse}
 
-bpxpls: 60-second pulse
+\item{sbp:}{Average systolic blood pressure (mm Hg)}
 
-sbp: Average systolic blood pressure (mm Hg)
+\item{dbp:}{Average diastolic blood pressure (mm Hg)}
 
-dbp: Average diastolic blood pressure (mm Hg)
-
-bpread: Number of blood pressure readings
+\item{bpread:}{Number of blood pressure readings}
+}
 }
 \usage{
 data(nhanes)
 }
 \description{
-Selected variables from the 2015-2016 National Health and Nutrition Exami-
-nation Survey (NHANES). Source: Centers for Disease Control and Prevention (2017). This
-data set is made available for pedagogical purposes only. Anyone wishing to publish results
-or draw conclusions from NHANES data should obtain the original data set from the source.
+Selected variables from the 2015-2016 National Health and Nutrition 
+Examination Survey (NHANES). This data set is provided for educational purposes only. Anyone wishing to publish or use results
+from analyses of NHANES data should obtain the data files directly from the source: Centers for Disease Control and Prevention (2017).
 }
 \details{
-The data files merged to create nhanes.csv can be read directly from the SAS transport
-files DEMO_I.XPT , BMX_I.XPT , TCHOL_I.XPT , and BPX_I.XPT from the NHANES website.
-This data set is provided for educational purposes only. Anyone wishing to publish or use
-results from analyses of NHANES data should obtain the data files directly from the source.
+The data files merged to create \emph{nhanes} can be read directly from the SAS transport
+files \cr DEMO_I.XPT,BMX_I.XPT,TCHOL_I.XPT,and BPX_I.XPT from the NHANES website.
+Variables 1-23 have the same names as in the SAS transport files.
 
-The blood pressure variables sbp and dbp were created as follows. In the medical examina-
- tion, three consecutive blood pressure readings were obtained after participants sat quietly
-for 5 minutes and the maximum inflation level was determined. A fourth measurement was
+The blood pressure variables sbp and dbp were created as follows. In the medical examination, three consecutive blood pressure readings were obtained after participants sat quietly
+for 5 minutes, and the maximum inflation level was determined. A fourth measurement was
 conducted for some persons who had an incomplete or interrupted blood pressure reading.
+
 The variables sbp and dbp were calculated by discarding the first blood pressure reading
 and calculating the average of the remaining valid readings. Note that some of the diastolic
 blood pressure readings are 0.
+
+In the comma-delimited file nhanes.csv, missing values are denoted by -9. In the R data file, missing values are
+denoted by NA. Note that some of the codes for variables in the table below also denote
+missing values; for example, the value 7 for \emph{dmdeduc2} indicates "Refused", and these codes
+for special types of missing values remain in the R data files.
 }
 \references{
-Lohr (2021). Sampling: Design and Analysis, 3rd Edition.
+Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+
+Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
 }
 \keyword{datasets}

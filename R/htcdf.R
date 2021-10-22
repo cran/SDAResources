@@ -1,0 +1,39 @@
+#' htcdf data
+#'
+#' 
+#'Empirical distribution function and empirical probability mass function of data in \emph{htpop}.
+#'
+#'
+#' @format This data frame contains the following columns:
+#' 
+#'\describe{
+#'\item{height:}{height value, cm}
+#'
+#'\item{frequency:}{number of times height value in column 1 occurs in population}
+#'
+#'\item{epmf:}{empirical probability mass function}
+#'
+#'\item{ecdf:}{empirical distribution function}
+#'}
+#'  
+#'  
+#'  
+#'
+#' @docType data
+#'
+#' @usage data(htcdf)
+#'
+#'
+#'
+#' @keywords datasets
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press. 
+#' 
+#'
+#' 
+#' 
+#' 
+"htcdf"
+

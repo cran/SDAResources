@@ -1,0 +1,97 @@
+#'winter data
+#'
+#' 
+#' Selected variables from the Arizona State University Winter Closure Survey,
+#'taken in January 1995 (provided courtesy of the ASU office of University Evaluation). This
+#'survey was taken to investigate the attitudes and opinions of university employees towards
+#'the closing of the university (for budgetary reasons) between December 25 and January 1.
+#'For the yes/no questions, the responses are coded as 1 = No, 2 = Yes. The variables treatsta
+#'and treatme are coded as 1 = strongly agree, 2 = agree, 3 = undecided, 4 = disagree, 5 = strongly
+#'disagree. The variables process and satbreak are coded as 1 = very satisfied, 2 = satisfied,
+#'3 = undecided, 4 = dissatisfied, 5 = very dissatisfied. Variables ownsupp through offclose are
+#'coded 1 if the person checked that the statement applied to him/her, and 2 if the statement
+#'was not checked.
+#'
+#'Missing values are coded as NA.
+#'
+#'
+#' @format This data frame contains the following columns:
+#' 
+#' \describe{
+#' 
+#'\item{class:}{Stratum number 
+#'
+#'1 = faculty 
+#'
+#'2 = classified staff 
+#'
+#'3 = administrative staff
+#'
+#'4 = academic professional}
+#'
+#'\item{yearasu:}{Number of years worked at ASU
+#'
+#'1 = 1-2 years
+#'
+#'2 = 3-4 years
+#'
+#'3 = 5-9 years
+#'
+#'4 = 10-14 years
+#'
+#'  5 = 15 or more years}
+#'
+#'\item{vacation:}{In the past, have you usually taken vacation days the entire
+#'period between December 25 and January 1?}
+#'
+#'\item{work:}{Did you work on campus during Winter Break Closure?}
+#'
+#'\item{havediff:}{Did the Winter Break Closure cause you any diffculty/concerns?}
+#'  
+#'  \item{negaeffe:}{Did the Winter Break Closure negatively affect your work productivity?}
+#'  
+#'  \item{ownsupp:}{I was unable to obtain staff support in my department/offce}
+#'  
+#'  \item{othersup:}{I was unable to obtain staff support in other departments/offices}
+#'  
+#'  \item{utility:}{I was unable to access computers, copy machine, etc. in my department/office}
+#'  
+#'  \item{environ:}{I was unable to endure environmental conditions, e.g., not properly climatized}
+#'  
+#'  \item{uniserve:}{I was unable to access university services necessary to my work}
+#'  
+#'  \item{workelse:}{I was unable to work on my assignments because I work in another department/office}
+#'  
+#'  \item{offclose:}{I was unable to work on my assignments because my office was closed}
+#'  
+#'  \item{treatsta:}{Compared to other departments/offices, I feel staff in my department/office were treated fairly}
+#'  
+#'  \item{treatme:}{Compared to other people working in my department/office, I feel I was treated fairly}
+#'  
+#'  \item{process:}{How satisfied are you with the process used to inform staff about Winter Break Closure?}
+#'  
+#'  \item{satbreak:}{How satisfied are you with the fact that ASU had a Winter Break Closure this year?}
+#'  
+#'  \item{breakaga:}{Would you want to have Winter Break Closure again?}
+#'  
+#'  }
+#'  
+#'
+#' @docType data
+#'
+#' @usage data(winter)
+#'
+#'
+#'
+#' @keywords datasets
+#'
+#' @references Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+#' 
+#'@references Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
+#' 
+#'
+#' 
+#' 
+#' 
+"winter"
+

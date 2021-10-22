@@ -4,8 +4,8 @@
 \alias{intervals_ex40}
 \title{Interval estimates using SRS formulae and formulae appropriate for cluster samples}
 \usage{
-intervals_ex40(groupcorr = 0, numintervals = 100, groupsize = 5, 
-sampgroups = 10, popgroups = 5000, mu = 0, sigma = 1)
+intervals_ex40(groupcorr, numintervals, groupsize, 
+sampgroups, popgroups, mu, sigma)
 }
 \arguments{
 \item{groupcorr}{The intracluster correlation coefficient rho}
@@ -23,27 +23,28 @@ sampgroups = 10, popgroups = 5000, mu = 0, sigma = 1)
 \item{sigma}{Standard deviation for generating population}
 }
 \value{
-SRS_cover_prob	proportion of intervals using SRS formulae that include the true population mean mu
+SRS_cover_prob:	proportion of intervals using SRS formulae that include the true population mean mu
 
-cl_cover_prob	proportion of intervals using cluster sampling formulae that include the true population mean mu
+cl_cover_prob: proportion of intervals using cluster sampling formulae 
+that include the true population mean mu
 
-SRS_mean_CI_width	the average width of the interval estimates from SRS
+SRS_mean_CI_width:	the average width of the interval estimates from SRS
 
-Cluster_mean_CI_width	the average width of the interval estimates from cluster sampling
+Cluster_mean_CI_width:	the average width of the interval estimates from cluster sampling
 
-Replicate	Simulation replicate
+Replicate:	Simulation replicate
 
-srs_lci	lower limit of CI from SRS
+srs_lci:	lower limit of CI from SRS
 
-srs_uci	upper limit of CI from SRS
+srs_uci:	upper limit of CI from SRS
 
-clus_lci	lower limit of CI from cluster sampling
+clus_lci:	lower limit of CI from cluster sampling
 
-clus_uci	upper limit of CI from cluster sampling
+clus_uci:	upper limit of CI from cluster sampling
 
-scatter plot	scatter plot of the last simulated sample
+scatter plot: first graph shows scatter plot of the last simulated sample
 
-CI plots	second graph shows interval estimates produced for each sample if analyzed as an SRS
+CI plots: second graph shows interval estimates produced for each sample if analyzed as an SRS
  (with red interval not containing the true parameter), and the third shows the interval estimates produced for each sample 
  when analyzed as a cluster sample.
 }
@@ -52,6 +53,10 @@ Simulate a population of clusters, then draw a simple random sample of clusters 
 SRS formulae and formulae appropriate for cluster samples.
 }
 \examples{
+# default setting
+intervals_ex40(groupcorr = 0, numintervals = 100, groupsize = 5, 
+sampgroups = 10, popgroups = 5000,mu = 0, sigma = 1)
+# change groupcorr and leave others as default setting
 intervals_ex40(groupcorr = 0.3)
 intervals_ex40(groupcorr = 0.7, numintervals = 100, groupsize = 5, 
 sampgroups = 10, popgroups = 5000,mu = 0, sigma = 1)

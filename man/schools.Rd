@@ -6,30 +6,33 @@
 \title{schools data}
 \format{
 This data frame contains the following columns:
+\describe{
+\item{schoolid:}{school number (use as cluster variable)}
 
-schoolid: School number (use as cluster variable)
+\item{gender:}{gender of student (character variable, F = female, M = male)}
 
-gender: Gender of student (character variable, F = female, M = male)
+\item{math:}{score on math test}
 
-math: Score on math test
+\item{reading:}{score on reading test}
 
-reading: Score on reading test
+\item{mathlevel:}{category level for math test score:
 
-mathlevel: Category level for math test score:
+1 if 1 <= math <= 40
 
-\{1 if 1 <= math <= 40
+2 if 41 <= math
+}
 
-2 if 41 <= math\}
+\item{readlevel:}{category level for reading test score:
 
-readlevel: Category level for reading test score:
+1 if 1 <= read <= 32
 
-\{1 if 1 <= read <= 32
+2 if 33 <= read <= 50
+}
 
-2 if 33 <= read <= 50\}
+\item{Mi:}{number of students in school, \eqn{M_i}}
 
-Mi: Number of students in school, M_i
-
-finalwt: Weight for student in sample
+\item{finalwt:}{weight for student in sample}
+}
 }
 \usage{
 data(schools)
@@ -37,10 +40,12 @@ data(schools)
 \description{
 Math and reading test results from a two-stage cluster sample of tenth-grade
 students. An SRS of 10 schools was selected from the 75 schools in the population, and
-then 20 students were sampled from each school. These data are fictional, but the summary
-statistics are consistent with those seen in educational studies
+then 20 students were sampled from each school. These data are fictional but the summary
+statistics are consistent with those seen in educational studies.
 }
 \references{
-Lohr (2021). Sampling: Design and Analysis, 3rd Edition.
+Lohr (2021), Sampling: Design and Analysis, 3rd Edition. Boca Raton, FL: CRC Press.
+
+Lu and Lohr (2021), R Companion for \emph{Sampling: Design and Analysis, 3rd Edition}, 1st Edition. Boca Raton, FL: CRC Press.
 }
 \keyword{datasets}
